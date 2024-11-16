@@ -66,53 +66,228 @@ class _HomeState extends State<Home> {
               SizedBox(
                 height: 20,
               ),
-              Material(
-                elevation: 5,
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  padding: EdgeInsets.only(left: 20, top: 10, bottom: 20),
-                  width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
+              Stack(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 50),
+                    child: Material(
+                      elevation: 5,
                       borderRadius: BorderRadius.circular(20),
-                      gradient: const LinearGradient(colors: [
-                        Color(0xffef729e),
-                        Color(0xffed896d),
-                        Color(0xffec7c86)
-                      ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        padding: EdgeInsets.all(5),
+                      child: Container(
+                        padding: EdgeInsets.only(left: 20, top: 10, bottom: 20),
+                        width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
-                            border: Border.all(width: 2, color: Colors.white54),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Icon(
-                          Icons.done,
-                          color: Colors.white,
+                            borderRadius: BorderRadius.circular(20),
+                            gradient: const LinearGradient(
+                                colors: [
+                                  Color(0xffef729e),
+                                  Color(0xffed896d),
+                                  Color(0xffec7c86)
+                                ],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      width: 2, color: Colors.white54),
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Icon(
+                                Icons.done,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "Level 1",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  color:
+                                      const Color.fromARGB(232, 255, 255, 255),
+                                  fontSize: 20),
+                            ),
+                            Text(
+                              "Tavel newbie",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 26),
+                            ),
+                          ],
                         ),
                       ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        "Level 1",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            color: const Color.fromARGB(232, 255, 255, 255),
-                            fontSize: 20),
-                      ),
-                      Text(
-                        "Tavel newbie",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                            fontSize: 26),
-                      ),
-                    ],
+                    ),
                   ),
-                ),
-              )
+                  Padding(
+                    padding: const EdgeInsets.only(right: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Image.asset(
+                          "TravelImage.png",
+                          height: 100,
+                          width: 100,
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Stack(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 50),
+                    child: Material(
+                      elevation: 5,
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                        padding: EdgeInsets.only(left: 20, top: 10, bottom: 20),
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            gradient: const LinearGradient(
+                                colors: [
+                                  Color(0xff5174ed),
+                                  Color(0xff2f95f4),
+                                  Color(0xff0bb7fc)
+                                ],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      width: 2, color: Colors.white54),
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Icon(
+                                Icons.play_arrow,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "Level 2",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  color:
+                                      const Color.fromARGB(232, 255, 255, 255),
+                                  fontSize: 20),
+                            ),
+                            Text(
+                              "Continuing",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 26),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Image.asset(
+                          "hotAirBalloon.png",
+                          height: 100,
+                          width: 100,
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Stack(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 50),
+                    child: Material(
+                      elevation: 5,
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                        padding: EdgeInsets.only(left: 20, top: 10, bottom: 20),
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            gradient: const LinearGradient(
+                                colors: [
+                                  Color(0xffa58bd2),
+                                  Color(0xffcfa7dd),
+                                  Color(0xfff6bfea)
+                                ],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight)),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      width: 2, color: Colors.white54),
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Icon(
+                                Icons.play_arrow,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "Level 3",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  color:
+                                      const Color.fromARGB(232, 255, 255, 255),
+                                  fontSize: 20),
+                            ),
+                            Text(
+                              "experienced",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontSize: 26),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Image.asset(
+                          "locationWithEarth.png",
+                          height: 100,
+                          width: 100,
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ],
           )),
     );
