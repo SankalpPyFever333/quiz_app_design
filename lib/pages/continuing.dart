@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app_ui/pages/questions.dart';
 
 class ContinuePage extends StatefulWidget {
   const ContinuePage({super.key});
@@ -78,24 +79,29 @@ class _ContinuePageState extends State<ContinuePage> {
             SizedBox(
               height: 60,
             ),
-            Container(
-              margin: EdgeInsets.only(right: 20),
-              child: Material(
-                elevation: 4,
-                borderRadius: BorderRadius.circular(10),
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Center(
-                    child: Text(
-                      "Continue",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Color(0xff4183f1),
-                          fontSize: 20),
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context , MaterialPageRoute(builder: (context)=>QuestionPage()));
+              },
+              child: Container(
+                margin: EdgeInsets.only(right: 20),
+                child: Material(
+                  elevation: 4,
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Center(
+                      child: Text(
+                        "Continue",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xff4183f1),
+                            fontSize: 20),
+                      ),
                     ),
                   ),
                 ),
