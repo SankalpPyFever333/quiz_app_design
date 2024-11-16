@@ -3,4 +3,6 @@
 A new Flutter project.
 
 ## Screenshots
-![App Screenshot](https://github.com/SankalpPyFever333/Floofy/blob/main/frontend/floofy/src/Assets/AppScreenShots/Screenshot%202024-04-12%20204313.png)
+![App Screenshot](https://github.com/SankalpPyFever333/quiz_app_design/blob/main/assets/appScreenshot/homeAppSS.png)
+![App Screenshot](https://github.com/SankalpPyFever333/quiz_app_design/blob/main/assets/appScreenshot/continuePageSS.png)
+![App Screenshot](https://github.com/SankalpPyFever333/quiz_app_design/blob/main/assets/appScreenshot/questionPageSS.png)
