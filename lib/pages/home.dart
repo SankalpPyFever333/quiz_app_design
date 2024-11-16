@@ -255,7 +255,7 @@ class _HomeState extends State<Home> {
                                       width: 2, color: Colors.white54),
                                   borderRadius: BorderRadius.circular(10)),
                               child: Icon(
-                                Icons.play_arrow,
+                                Icons.lock,
                                 color: Colors.white,
                               ),
                             ),
